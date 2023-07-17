@@ -1,0 +1,41 @@
+#searchbar {
+  text-align: left;
+  padding-left: 10px;
+  height: 4vh;
+  border: solid;
+  border-bottom: 20;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+
+  color: var(--app_bgcolor);
+  background-color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+  font-size: large;
+  padding-top: -10px;
+  box-shadow: 0 0 3px rgba(6, 6, 6, 0.3);
+}
+
+#searchbar:focus{
+  outline: none;
+}
+
+#searchBtn {
+  width: 40px;
+  height: 4.5vh;
+  margin-left: 2px;
+  position: absolute;
+  padding-top: 3.2px;
+  margin-top: -1.5px;
+  margin-left: 0;
+  overflow: hidden;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(6, 6, 6, 0.3)
+}
+
+
+

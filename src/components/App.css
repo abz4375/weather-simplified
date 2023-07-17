@@ -1,0 +1,35 @@
+:root {
+    /* --app_bgcolor : rgb(51, 42, 113); */
+    --app_bgcolor : #091330;
+}
+
+*{
+    background-color: var(--app_bgcolor);
+}
+
+.App{
+    margin: none;
+    padding: none;
+
+    background-color: var(--app_bgcolor);
+    color: whitesmoke;
+    height: 200vh;
+    width: 97vw;
+}
+
+.heading{
+    text-align: center;
+    font-size: 6.5vh;
+    font-family: 'Poppins';
+    color: whitesmoke;
+    padding-top: 8%;
+}
+
+hr{
+    background: whitesmoke ;
+    box-shadow: none;
+    align-items: center;
+    width: 75%;
+    height:7px;
+    border: none;
+}
