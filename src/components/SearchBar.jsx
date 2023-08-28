@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import "./SearchBar.css";
 import SearchIcon from "@mui/icons-material/Search";
 
@@ -19,6 +19,7 @@ const SearchBar = (props) => {
           placeholder="Search..."
           value={address}
           onChange={(e)=>{setAddress((e.target.value).charAt(0).toUpperCase() + (e.target.value).slice(1))}}
+          autoFocus
         ></input>
         <SearchIcon  id="searchBtn" onClick ={onSearch}><button type="submit"></button></SearchIcon>
         

@@ -1,15 +1,15 @@
 import {useEffect, useState} from 'react';
 
 import "./App.css";
-import Heading from "./Heading";
-import Navbar from "./Navbar.jsx";
-import Temperature from "./Temperature";
+import Heading from "./components/Heading";
+import Navbar from "./components/Navbar";
+import Temperature from "./components/Temperature";
 
 function App() {
   const [tempData,setTempData] = useState([])
   const [latitude,setLatitude] = useState('')
   const [longitude,setLongitude] = useState('')
-  const [place,setPlace] = useState('')
+  const [place,setPlace] = useState('#')
   const [text,setText] = useState('')
 
   const getData = (data) => {
@@ -28,6 +28,9 @@ function App() {
         // console.log("longitude is: " +longitude)
       })
     }
+    else{
+          window.location.reload(true);
+    }
   },[place])
 
   useEffect(()=>{
@@ -38,18 +41,20 @@ function App() {
         // console.log(resp);
         setTempData(resp);
 
-        setText(place+"'s Weather :");
+        setText(place+"'s Weather :")
       })
-    }
-  },[latitude,longitude])
-  
+    } 
+  },[latitude,longitude,place])
+
   return (
     <div className="App">
       {/* this is App */}
       <Navbar onSubmit={ getData}/>
       <Heading text = {text}/>
-      {/* <hr/> */}
       <br />
+
+      <br /><br /><br />
+      
       <Temperature apidata = {tempData} />
       
     </div>

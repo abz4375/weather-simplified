@@ -5,8 +5,8 @@ const Temperature = ({apidata}) => {
     <div className="temperature">
       {
         (apidata?.current_weather?.temperature)? 
-        (apidata?.current_weather?.temperature + " °C") 
-        : '🌏' 
+        ( apidata?.current_weather?.temperature + " °C") 
+        : '🌏 weather'
       }
     </div>
   );

@@ -1,0 +1,45 @@
+:root {
+  /* --app_bgcolor : rgb(51, 42, 113); */
+  --app_bgcolor : #091330;
+}
+
+*{
+  background-color: var(--app_bgcolor);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App{
+  margin: none;
+  padding: none;
+
+  background-color: var(--app_bgcolor);
+  color: whitesmoke;
+  height: 200vh;
+  width: 97vw;
+}
+
+.heading{
+  text-align: center;
+  font-size: 6.5vh;
+  font-family: 'Poppins';
+  color: whitesmoke;
+  padding-top: 8%;
+}
+
+.temperature{
+  margin: 0 auto;
+  padding-top: 7vh;
+  padding-bottom: 7vh ;
+}
+
+hr{
+  margin: 0 auto;
+  background: whitesmoke ;
+  box-shadow: none;
+  align-items: center;
+  width: 75%;
+  height:5px;
+  border: none;
+}
