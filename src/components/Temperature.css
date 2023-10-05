@@ -16,3 +16,10 @@
 .temperature span {
     color: white;
 }
+
+@media screen and (max-width : 864px) {
+    .temperature {
+        display: hidden;
+        font-size: 15vw;
+    }
+}
