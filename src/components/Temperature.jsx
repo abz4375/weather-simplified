@@ -6,7 +6,7 @@ const Temperature = ({apidata}) => {
       {
         (apidata?.current_weather?.temperature)? 
         ( apidata?.current_weather?.temperature + " °C") 
-        : '🌏 weather'
+        : '🌏'
       }
     </div>
   );
