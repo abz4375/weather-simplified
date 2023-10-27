@@ -12,7 +12,7 @@ const SearchBar = (props) => {
 
   return (
     <div className="searchbar">
-      <form onSubmit={onSearch}>
+      <form onSubmit={onSearch} autoComplete="off">
         <input
           id="searchbar"
           type="text"

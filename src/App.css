@@ -10,6 +10,11 @@
   box-sizing: border-box;
 }
 
+*::selection {
+  background: rgba(101, 173, 255, 0.268);
+  transition: all 0.125s ease-out 0s;
+}
+
 .App{
   margin: none;
   padding: none;
