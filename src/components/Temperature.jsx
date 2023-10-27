@@ -1,25 +1,26 @@
 import "./Temperature.css";
 
-const Temperature = ({apidata}) => {
-  return (
-    <div className="temperature">
-      <p className="tem">
-      {
-        (apidata?.current_weather?.temperature)?("Temperature") : ""
-      }
-      </p>
+const Temperature = ({ apidata }) => {
+  let home = true;
+  if (apidata?.current?.temperature_2m) home = false;
 
-      {/* {
-        (apidata?.current_weather?.temperature)?(<br></br>):""
-      } */}
-
-      {
-        (apidata?.current_weather?.temperature)? 
-        ( apidata?.current_weather?.temperature + " °C") 
-        : '🌏'
-      }
-    </div>
-  );
+  if (home) {
+    return <div className="temperature">🌦️</div>;
+  } else
+    return (
+      <div className="temperature">
+        {/* <p className="tem">
+          {">"} Temperature
+        </p> */}
+        {apidata?.current?.temperature_2m + " °C"}
+        <p className="app-temp">
+          Feels like :
+          <span >
+          {" "+ apidata?.current?.apparent_temperature + " °C"}
+          </span>
+        </p>
+      </div>
+    );
 };
 
 export default Temperature;

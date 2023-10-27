@@ -8,4 +8,5 @@
 
 .heading{
     font-weight: 500;
+    transition: all 0.125 ease-out 0s;
 }
