@@ -23,7 +23,7 @@
   background-color: var(--app_bgcolor);
   /* background-blend-mode: saturation; */
   background-image: url(./assets/back.jpg);
-  background-size: 100vw;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: whitesmoke;

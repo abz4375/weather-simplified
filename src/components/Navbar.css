@@ -1,7 +1,7 @@
 .navbar {
   background-color: rgba(255, 255, 255, 0.09);
   backdrop-filter: blur(3px);
-  box-shadow: 0 0px 5px rgba(255, 255, 255, 0.09);
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.09);
   height: 50px;
   border: none;
   
