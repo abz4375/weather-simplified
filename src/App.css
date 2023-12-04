@@ -12,6 +12,7 @@
 
 *::selection {
   background: rgba(101, 173, 255, 0.268);
+  backdrop-filter: blur(100px);
   transition: all 0.125s ease-out 0s;
 }
 
@@ -20,9 +21,14 @@
   padding: none;
 
   background-color: var(--app_bgcolor);
+  /* background-blend-mode: saturation; */
+  background-image: url(./assets/back.jpg);
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: whitesmoke;
-  height: 200vh;
-  width: 97vw;
+  height: 120vh;
+  width: 100%;
 }
 
 .heading{

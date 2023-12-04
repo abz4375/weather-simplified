@@ -9,4 +9,7 @@
 .heading{
     font-weight: 500;
     transition: all 0.125 ease-out 0s;
+    background: transparent;
+    /* color: rgb(200, 228, 232); */
+    color: whitesmoke;
 }
